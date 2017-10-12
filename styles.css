@@ -1,53 +1,61 @@
 html {
-<<<<<<< HEAD
   background-color: #607D8B;
-
   font-family: arial;
 }
 
-h1 {
-  color: white;
-  padding-left: 20px;
-}
-=======
-  background-color: black;
-}
-
->>>>>>> ca7fe61e09cedcf619c3ccbcc925ee0857967ec0
-
-.container {
+.title-container {
+  margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+}
 
+.button {
+  outline: 5px solid black;
+  font-size: 30px;
+  display: flex;
+  background-color: #b14c4c;
+  padding: 20px;
+  margin: 0 20px;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.winner {
+  outline: 5px solid black;
+  font-size: 30px;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  margin: 0 20px;
+  width: 300px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
 .box {
-<<<<<<< HEAD
   font-size: 40px;
-=======
->>>>>>> ca7fe61e09cedcf619c3ccbcc925ee0857967ec0
   display: flex;
   justify-content: center;
-  width: 80px;
-  padding: 80px;
+  width: 60px;
+  padding: 30px 60px;
   margin: 20px;
   background-color: #22b6d8;
   background-color: #b14c4c;
-  border: 5px solid white;
-
-<<<<<<< HEAD
-
-=======
-  font-size: 40px;
-  font-family: arial;
->>>>>>> ca7fe61e09cedcf619c3ccbcc925ee0857967ec0
-  color: white;
+  background-color: white;
+  outline: 5px solid black;
+  color: black;
 }
 
 .picker {
-  /*outline: 5px solid white;*/
-  color: #b14c4c;
-  background-color: white;
+  outline: 5px solid white;
+  color: white;
+  background-color: #b14c4c;
 }
