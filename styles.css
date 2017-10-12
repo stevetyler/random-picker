@@ -1,4 +1,5 @@
 html {
+<<<<<<< HEAD
   background-color: #607D8B;
 
   font-family: arial;
@@ -8,6 +9,11 @@ h1 {
   color: white;
   padding-left: 20px;
 }
+=======
+  background-color: black;
+}
+
+>>>>>>> ca7fe61e09cedcf619c3ccbcc925ee0857967ec0
 
 .container {
   display: flex;
@@ -18,7 +24,10 @@ h1 {
 }
 
 .box {
+<<<<<<< HEAD
   font-size: 40px;
+=======
+>>>>>>> ca7fe61e09cedcf619c3ccbcc925ee0857967ec0
   display: flex;
   justify-content: center;
   width: 80px;
@@ -28,7 +37,12 @@ h1 {
   background-color: #b14c4c;
   border: 5px solid white;
 
+<<<<<<< HEAD
 
+=======
+  font-size: 40px;
+  font-family: arial;
+>>>>>>> ca7fe61e09cedcf619c3ccbcc925ee0857967ec0
   color: white;
 }
 
