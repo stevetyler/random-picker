@@ -1,10 +1,47 @@
 html {
-  background-color: black;
+  background-color: #333232;
   font-family: arial;
 }
 
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  padding: 50px 60px;
+  margin: 20px;
+  background-color: #22b6d8;
+  background-color: #b14c4c;
+  background-color: #1e66dc;
+  outline: 5px solid white;
+  color: white;
+}
+
+.picked {
+  outline: 5px solid #ffffff;
+  color: #2d3e9a;
+  background-color: #ffffff;
+}
+
+.winner-container {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+
 .button {
-  outline: 5px solid black;
+  outline: 5px solid white;
   font-size: 30px;
   display: flex;
   padding: 20px;
@@ -24,48 +61,13 @@ html {
 }
 
 .winner {
-  outline: 5px solid black;
+  outline: 5px solid white;
   font-size: 30px;
   display: flex;
   background-color: #FF9800;
   background-color: white;
+  color: black;
   padding: 20px;
   margin: 0 20px;
   width: 360px;
-}
-
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-}
-
-.box {
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  width: 60px;
-  padding: 50px 60px;
-  margin: 20px;
-  background-color: #22b6d8;
-  background-color: #b14c4c;
-  background-color: #3F51B5;
-  outline: 5px solid black;
-  color: white;
-}
-
-.picked {
-  outline: 5px solid #000000;
-  color: black;
-  background-color: #ffffff;
-  background-color: #ffd900;
-}
-
-.title-container {
-  margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
 }

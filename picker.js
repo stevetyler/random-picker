@@ -28,7 +28,6 @@ var picker = {
     if (this.iLast) {
       this.elemArr[this.iLast].setAttribute('class', 'box');
     }
-
     if (typeof this.timeoutID === 'number') {
       this.stop();
     }
@@ -47,6 +46,7 @@ var picker = {
   stop: function() {
     window.clearTimeout(this.timeoutID);
     this.timeoutID = undefined;
+    document.querySelector('.winner').innerHTML = this.elemArr[this.iLast].innerHTML;
   }
 };
 
