@@ -47,6 +47,9 @@ var picker = {
   stop: function() {
     window.clearTimeout(this.timeoutID);
     this.timeoutID = undefined;
+
+    document.querySelector('.winner').innerHTML = this.elemArr[this.iLast].innerHTML;
+
   }
 };
 
