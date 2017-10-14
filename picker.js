@@ -39,7 +39,7 @@ var picker = {
         self.elemArr[iPrev].setAttribute('class', 'box');
         i = Math.round(Math.random() * (self.elemArr.length - 1));
         self.iLast = i;
-        self.elemArr[i].setAttribute('class', 'picker box');
+        self.elemArr[i].setAttribute('class', 'picked box');
         timeout(i);
       }, self.interval);
     })();
