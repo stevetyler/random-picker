@@ -3,34 +3,51 @@
 // add picker class to div
 
 var button = document.querySelector('.button');
-var started = false;
 
 button.addEventListener('click', function() {
-  if (!started) {
-    picker();
-    started = true;
+  if (!picker.timeoutID) {
+    picker.start();
+    button.setAttribute('class', 'button stop');
+    button.innerHTML = 'Stop';
   }
   else {
-    //console.log('timeout id', this.timeoutID);
-    started = false;
+    picker.stop();
+    button.setAttribute('class', 'button start');
+    button.innerHTML = 'Start';
   }
 });
 
-function picker() {
-  var divArr = document.querySelectorAll('.box');
-  var interval = 75;
-  var i;
+var picker = {
+  init: function() {
+    this.elemArr = document.querySelectorAll('.box');
+  },
+  interval: 75,
+  start: function() {
+    var self = this;
 
-  (function timeout(iPrev) {
-    setTimeout(function () {
-      //console.log('timeoutid', this.timeoutID);
-      iPrev = iPrev || 0;
-      divArr[iPrev].setAttribute('class', 'box');
-      i = Math.round(Math.random() * (divArr.length - 1));
-      divArr[i].setAttribute('class', 'picker box');
-      timeout(i);
-    }, interval);
-  })();
-}
+    if (this.iLast) {
+      this.elemArr[this.iLast].setAttribute('class', 'box');
+    }
 
-//picker();
+    if (typeof this.timeoutID === 'number') {
+      this.stop();
+    }
+
+    (function timeout(iPrev) {
+      self.timeoutID = window.setTimeout(function () {
+        iPrev = iPrev || 0;
+        self.elemArr[iPrev].setAttribute('class', 'box');
+        i = Math.round(Math.random() * (self.elemArr.length - 1));
+        self.iLast = i;
+        self.elemArr[i].setAttribute('class', 'picker box');
+        timeout(i);
+      }, self.interval);
+    })();
+  },
+  stop: function() {
+    window.clearTimeout(this.timeoutID);
+    this.timeoutID = undefined;
+  }
+};
+
+picker.init();
