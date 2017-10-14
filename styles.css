@@ -15,12 +15,20 @@ html {
   outline: 5px solid black;
   font-size: 30px;
   display: flex;
-  background-color: #4CAF50;
+
   padding: 20px;
   margin: 0 20px;
   width: 100px;
   color: white;
   cursor: pointer;
+}
+
+.button.start {
+  background-color: #4CAF50;
+}
+
+.button.stop {
+  background-color: #b14c4c;
 }
 
 .winner {
