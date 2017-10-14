@@ -1,5 +1,5 @@
 html {
-  background-color: #cbd4d8;
+  background-color: black;
   font-family: arial;
 }
 
@@ -27,6 +27,7 @@ html {
   outline: 5px solid black;
   font-size: 30px;
   display: flex;
+  background-color: #FF9800;
   background-color: white;
   padding: 20px;
   margin: 0 20px;
@@ -49,15 +50,16 @@ html {
   margin: 20px;
   background-color: #22b6d8;
   background-color: #b14c4c;
-  background-color: rgb(239, 239, 232);
+  background-color: #3F51B5;
   outline: 5px solid black;
-  color: black;
+  color: white;
 }
 
 .picked {
   outline: 5px solid #000000;
-  color: white;
-  background-color: #3464b3;
+  color: black;
+  background-color: #ffffff;
+  background-color: #ffd900;
 }
 
 .title-container {
