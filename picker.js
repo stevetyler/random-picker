@@ -1,7 +1,3 @@
-// get all divs with box class
-// generate random number between 0 and length of array -1
-// add picker class to div
-
 var button = document.querySelector('.button');
 
 button.addEventListener('click', function() {
@@ -31,7 +27,6 @@ var picker = {
     if (typeof this.timeoutID === 'number') {
       this.stop();
     }
-
     (function timeout(iPrev) {
       self.timeoutID = window.setTimeout(function () {
         iPrev = iPrev || 0;
@@ -47,7 +42,6 @@ var picker = {
     window.clearTimeout(this.timeoutID);
     this.timeoutID = undefined;
     document.querySelector('.winner').innerText = 'Winner : ' + this.elemArr[this.iLast].innerText;
-    //this.elemArr[this.iLast].setAttribute('class', 'picked box');
   }
 };
 
