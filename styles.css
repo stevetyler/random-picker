@@ -20,22 +20,21 @@ html {
   margin: 20px;
   background-color: #22b6d8;
   background-color: #b14c4c;
-  background-color:#b14c4c;
   outline: 5px solid white;
   color: white;
 }
 
 .picker {
-  /*outline: 5px solid #FF9800;*/
-  color: #ffffff;
-  background-color: #FF9800;
+  outline: 5px solid white;
+  background-color: #ffffff;
+  color: black;
 }
 
-.picked {
-  background-color: #4CAF50;
-  /*outline: 5px solid #4CAF50;*/
-  color: #ffffff;
-}
+/*.picked {
+  background-color: #ffffff;
+  outline: 5px solid #4CAF50;
+  color: #49b339;
+}*/
 
 .winner-container {
   margin: 20px 0;
