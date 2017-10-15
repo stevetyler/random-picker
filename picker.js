@@ -46,8 +46,14 @@ var picker = {
   stop: function() {
     window.clearTimeout(this.timeoutID);
     this.timeoutID = undefined;
+<<<<<<< HEAD
     document.querySelector('.winner').innerHTML = this.elemArr[this.iLast].innerHTML;
     this.elemArr[this.iLast].setAttribute('class', 'picked box');
+=======
+
+    document.querySelector('.winner').innerHTML = this.elemArr[this.iLast].innerHTML;
+
+>>>>>>> 9e36d7b83276a2b44dec969bfd94e2261f2e680e
   }
 };
 

@@ -47,7 +47,11 @@ html {
 
 
 .button {
+<<<<<<< HEAD
   outline: 5px solid white;
+=======
+  outline: 5px solid black;
+>>>>>>> 9e36d7b83276a2b44dec969bfd94e2261f2e680e
   font-size: 30px;
   display: flex;
   padding: 20px;
