@@ -38,7 +38,7 @@ var picker = {
         self.elemArr[iPrev].setAttribute('class', 'box');
         i = Math.round(Math.random() * (self.elemArr.length - 1));
         self.iLast = i;
-        self.elemArr[i].setAttribute('class', 'picked box');
+        self.elemArr[i].setAttribute('class', 'picker box');
         timeout(i);
       }, self.interval);
     })();
@@ -47,6 +47,7 @@ var picker = {
     window.clearTimeout(this.timeoutID);
     this.timeoutID = undefined;
     document.querySelector('.winner').innerHTML = this.elemArr[this.iLast].innerHTML;
+    this.elemArr[this.iLast].setAttribute('class', 'picked box');
   }
 };
 
